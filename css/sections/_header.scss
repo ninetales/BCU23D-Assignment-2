@@ -5,8 +5,9 @@ Header
 header {
     height: $headerHeight;
     background-color: $primaryColor;
-    position: sticky;
-    z-index: 3;
+    position: sticky; 
+    top: 0;
+    z-index: 99;
 
     nav {
         height: 100%;
