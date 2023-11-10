@@ -1,5 +1,22 @@
-/* skriv din css här */
+@import './vendor/reset.scss';
+@import './vendor/normalize.scss';
 
-body {
-    background-color: yellow;
+@import './abstract/colors.scss';
+@import './abstract/typography.scss';
+@import './abstract/variables.scss';
+
+@import './components/_mobile_nav_button.scss';
+
+@import './sections/header.scss';
+@import './sections/mobile-drop-down-menu.scss';
+
+
+/* ================================================================
+* Layout
+=================================================================== */
+@import './layout/grid.scss';
+@import './layout/base.scss';
+
+@media screen and (min-width: $desktopSize) {
+    @import './layout/desktop.scss';
 }

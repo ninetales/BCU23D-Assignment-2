@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DropTrans</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Jolly Lodger Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+    
+    <!-- Rubik Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <script src="./assets/js/mobile-nav.js"></script>
+
 </head>
 <body>
+
+    <!-- ========================================= -->
+    <!-- Mobile navigation -->
+    <!-- ========================================= -->
+    <div class="mobile-drop-down-menu" data-mobile-drop-down-active="false">
+        <nav>
+            <ul class="mobile-drop-down-menu__list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Invest</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div><!-- .mobile-drop-down-menu -->
+
+    <!-- ========================================= -->
+    <!-- Header -->
+    <!-- ========================================= -->
+    <header>
+
+        <div class="container container--no-mobile-padding">
+            <nav>
+
+                <button class="nav__btn prego" data-mobile-nav-btn-active="">
+                    <span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+        
+                <ul class="nav__links nav__links--left">
+                    <li><a href="#">Home</a></li>
+                    <li class="spooky_border"></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+        
+                <a href="" class="nav__logo">DropTrans</a>
+                
+                <ul class="nav__links nav__links--right">
+                    <li><a href="#">Invest</a></li>
+                    <li class="spooky_border"></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+    
+            </nav>
+
+        </div><!-- .container -->
+
+    </header>
     
 </body>
 </html>
