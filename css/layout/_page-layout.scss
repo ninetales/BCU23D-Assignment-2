@@ -32,13 +32,13 @@ _page-layout.scss
         // background-color: red;
         padding: 50px;
 
-        article {
+        .article {
             display: flex;
             flex-direction: column;
             gap: 20px;
             max-width: 800px;
 
-            .article__img-con {
+            &__img-con {
                 display: block;
                 width: 100%;
                 max-width: 500px;
@@ -103,11 +103,11 @@ _page-layout.scss
 
             gap: 50px;
     
-            article {
+            .article {
                 flex-direction: row;
                 gap: 50px;
     
-                .article__img-con {
+                &__img-con {
                     width: 100%;
                     min-width: 250px;
                     max-height: 350px;

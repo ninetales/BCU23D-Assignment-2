@@ -1,3 +1,7 @@
+/**********************************************************************
+mobile-nav.js
+***********************************************************************/
+
 document.addEventListener('DOMContentLoaded', function(){
 
     const mobileNavBtn = document.querySelector('[data-mobile-drop-down-active]');
