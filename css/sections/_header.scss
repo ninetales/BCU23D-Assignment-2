@@ -1,5 +1,5 @@
 /**********************************************************************
-Header
+_header.scss
 ***********************************************************************/
 
 header {
@@ -101,4 +101,15 @@ ul.nav__links {
         left: 50%;
     }
 
+}
+
+
+@media screen and (min-width: $tabletSize) {
+    .nav__btn {
+        display: none;
+    }
+    
+    ul.nav__links {
+        display: flex;
+    }
 }

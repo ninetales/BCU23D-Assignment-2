@@ -1,3 +1,7 @@
+/**********************************************************************
+Style.scss
+***********************************************************************/
+
 @import './vendor/reset.scss';
 @import './vendor/normalize.scss';
 
@@ -5,18 +9,12 @@
 @import './abstract/typography.scss';
 @import './abstract/variables.scss';
 
-@import './components/_mobile_nav_button.scss';
+@import './components/_mobile-nav-button.scss';
 
 @import './sections/header.scss';
 @import './sections/mobile-drop-down-menu.scss';
 
-
-/* ================================================================
-* Layout
-=================================================================== */
 @import './layout/grid.scss';
 @import './layout/base.scss';
-
-@media screen and (min-width: $desktopSize) {
-    @import './layout/desktop.scss';
-}
+@import './layout/hero.scss';
+@import './layout/page-layout.scss';
