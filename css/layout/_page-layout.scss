@@ -15,10 +15,12 @@ _page-layout.scss
     bottom: 0;
     left: 0;
     z-index: 1;
-    background-image: url(../assets/images/austin-distel-DS1hZ4xzD7M-unsplash.jpg);
+    background-image: url(../assets/images/austin-distel-DS1hZ4xzD7M-unsplash.webp);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     filter: brightness(0.2);
+    min-height: calc(100vh - $headerHeight);
   }
 
   &__img-con {
@@ -45,7 +47,6 @@ _page-layout.scss
         max-width: 500px;
         overflow: hidden;
         border-radius: 0.3rem;
-        max-height: 500px;
 
         img {
           object-fit: cover;
