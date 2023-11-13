@@ -1,9 +1,10 @@
 /**********************************************************************
 _typography.scss
 ***********************************************************************/
+
 @function pxToRem($size) {
-    @return calc($size / 16) * 1rem;
+  @return calc($size / 16) * 1rem;
 }
 
-$fontPrimary: 'Rubik', Serif;
-$fontCreative: 'Jolly Lodger', Serif;
+$fontPrimary: "Rubik", Serif;
+$fontCreative: "Jolly Lodger", Serif;

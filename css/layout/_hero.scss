@@ -1,58 +1,57 @@
 /**********************************************************************
-_Hero.scss
+_hero.scss
 ***********************************************************************/
+
 .hero {
-    position: relative;
+  position: relative;
 
-    &__img-con {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        overflow: hidden;
+  &__img-con {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
 
-        img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-        }
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
     }
+  }
 
-    &__container {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 1;
+  &__container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
 
-        &--center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    &--center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+  }
 
-    &__message {
-        text-align: center;
-    }
+  &__message {
+    text-align: center;
+  }
 }
 
-
 @media screen and (min-width: $tabletSize) {
-    .hero {
-        &__message {
-            text-align: center;
-            background-color: $containerMessageColor;
-            box-shadow: 0 0 15px 25px rgba(0,0,0,.6);
-            max-width: 800px;
+  .hero {
+    &__message {
+      text-align: center;
+      background-color: $containerMessageColor;
+      box-shadow: 0 0 15px 25px rgba(0, 0, 0, 0.6);
+      max-width: 800px;
 
-            h1 {
-                font-size: pxToRem(80);
-                font-weight: 600;
-            }
-        }
+      h1 {
+        font-size: pxToRem(80);
+        font-weight: 600;
+      }
     }
-    
+  }
 }

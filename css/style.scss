@@ -1,21 +1,21 @@
 /**********************************************************************
-Style.scss
+style.scss
 ***********************************************************************/
 
-@import './vendor/reset.scss';
-@import './vendor/normalize.scss';
+@import "./vendor/reset.scss";
+@import "./vendor/normalize.scss";
 
-@import './abstract/colors.scss';
-@import './abstract/typography.scss';
-@import './abstract/variables.scss';
+@import "./abstract/colors.scss";
+@import "./abstract/typography.scss";
+@import "./abstract/variables.scss";
 
-@import './components/_mobile-nav-button.scss';
-@import './components/cookies.scss';
+@import "./components/_mobile-nav-button.scss";
+@import "./components/cookies.scss";
 
-@import './sections/header.scss';
-@import './sections/mobile-drop-down-menu.scss';
+@import "./sections/header.scss";
+@import "./sections/mobile-drop-down-menu.scss";
 
-@import './layout/grid.scss';
-@import './layout/base.scss';
-@import './layout/hero.scss';
-@import './layout/page-layout.scss';
+@import "./layout/grid.scss";
+@import "./layout/base.scss";
+@import "./layout/hero.scss";
+@import "./layout/page-layout.scss";

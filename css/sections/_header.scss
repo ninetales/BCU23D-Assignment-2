@@ -3,113 +3,106 @@ _header.scss
 ***********************************************************************/
 
 header {
-    height: $headerHeight;
-    background-color: $primaryColor;
-    position: sticky; 
-    top: 0;
-    z-index: 99;
+  height: $headerHeight;
+  background-color: $primaryColor;
+  position: sticky;
+  top: 0;
+  z-index: 99;
 
-    nav {
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+  nav {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
-        ul li,
-        a {
-            color: $textPrimaryLightColor;
-        }
-
-        a {
-            text-decoration: none;
-            font-size: pxToRem(16);
-        }
-
+    ul li,
+    a {
+      color: $textPrimaryLightColor;
     }
+
+    a {
+      text-decoration: none;
+      font-size: pxToRem(16);
+    }
+  }
 }
 
-
 ul.nav__links {
+  display: none;
+  align-items: center;
+  gap: 20px;
+  height: $headerHeight;
 
-    display: none;
-    align-items: center;
-    gap: 20px;
-    height: $headerHeight;
+  &--left {
+    justify-content: left;
+  }
 
-    &--left {
-        justify-content: left;
+  &--right {
+    justify-content: right;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  li.spooky_border {
+    width: 10px;
+    height: 20px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+
+    &:hover::before {
+      animation: spookyBorderAnimation 2s infinite;
     }
 
-    &--right {
-        justify-content: right;
+    &::before {
+      content: "";
+      width: 2px;
+      height: 20px;
+      display: block;
+      background-color: $textPrimaryLightColor;
+      position: absolute;
+      left: 50%;
+      margin-left: -1px;
     }
-
-
-    li {
-        display: inline-block;
-    }
-
-    li.spooky_border {
-        width: 10px;
-        height: 20px;
-        display: block;
-        position: relative;
-        cursor: pointer;
-
-        &:hover::before {
-            animation: spookyBorderAnimation 2s infinite;
-        }
-
-        &::before {
-            content: "";
-            width: 2px;
-            height: 20px;
-            display: block;
-            background-color: $textPrimaryLightColor;
-            position: absolute;
-            left: 50%;
-            margin-left: -1px;
-        }
-    }
-
+  }
 }
 
 .nav__logo {
-    font-family: $fontCreative;
-    font-size: 2.6rem;
-    text-align: center;
-    line-height: $headerHeight;
+  font-family: $fontCreative;
+  font-size: 2.6rem;
+  text-align: center;
+  line-height: $headerHeight;
 }
 
 @keyframes spookyBorderAnimation {
-    0% {
-        left: 50%;
-    }
+  0% {
+    left: 50%;
+  }
 
-    20% {
-        left: 100%;
-    }
+  20% {
+    left: 100%;
+  }
 
-    60% {
-        left: 50%;
-    }
+  60% {
+    left: 50%;
+  }
 
-    80% {
-        left: 0%;
-    }
+  80% {
+    left: 0%;
+  }
 
-    100% {
-        left: 50%;
-    }
-
+  100% {
+    left: 50%;
+  }
 }
 
-
 @media screen and (min-width: $tabletSize) {
-    .nav__btn {
-        display: none;
-    }
-    
-    ul.nav__links {
-        display: flex;
-    }
+  .nav__btn {
+    display: none;
+  }
+
+  ul.nav__links {
+    display: flex;
+  }
 }

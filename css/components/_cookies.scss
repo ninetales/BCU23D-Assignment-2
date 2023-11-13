@@ -1,74 +1,77 @@
+/**********************************************************************
+_cookies.scss
+***********************************************************************/
+
 .cookies {
+  display: grid;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 100px;
+  background-color: $secondaryColor;
+  z-index: 99;
+  padding: 20px;
+  gap: 20px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+
+  &__info {
+    p {
+      line-height: pxToRem(20);
+    }
+  }
+
+  &__action {
     display: grid;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    min-height: 100px;
-    background-color: $secondaryColor;
-    z-index: 99;
-    padding: 20px;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+  }
 
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
+  &__accept,
+  &__decline {
+    display: inline-block;
+    min-height: 44px;
+    cursor: pointer;
+    color: $textPrimaryLightColor;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: pxToRem(16);
+    border-radius: 15px;
+  }
 
-    &__info {
-        p {
-            line-height: pxToRem(20);
-        }
-    }
+  &__accept {
+    background-color: $cookiesAcceptColor;
+  }
 
-    &__action {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
-        width: 100%;
-    }
+  &__decline {
+    background-color: $cookiesDeclineColor;
+  }
 
-    &__accept,
-    &__decline {    
-        display: inline-block;
-        min-height: 44px;
-        cursor: pointer;
-        color: $textPrimaryLightColor;
-        border: none;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: pxToRem(16);
-        border-radius: 15px;
-    }
-
-    &__accept {
-        background-color: $cookiesAcceptColor;
-    }
-
-    &__decline {
-        background-color: $cookiesDeclineColor;
-    }
-
-    &[data-cookie-visible="false"]{
-        transform: translateY(100%);
-    }
+  &[data-cookie-visible="false"] {
+    transform: translateY(100%);
+  }
 }
 
-
 @media screen and (min-width: $tabletSize) {
-    .cookies {
-        padding: 40px;
+  .cookies {
+    padding: 40px;
 
-        &__accept,
-        &__decline {
-            font-size: pxToRem(25);
-            padding: 10px;
-        }
-    }   
+    &__accept,
+    &__decline {
+      font-size: pxToRem(25);
+      padding: 10px;
+    }
+  }
 }
 
 @media screen and (min-width: $desktopSize) {
-    .cookies {
-        grid-template-rows:unset;
-        grid-template-columns: 60% 1fr;
-    }   
+  .cookies {
+    grid-template-rows: unset;
+    grid-template-columns: 60% 1fr;
+  }
 }

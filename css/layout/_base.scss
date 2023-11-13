@@ -3,14 +3,14 @@ _base.scss
 ***********************************************************************/
 
 html {
-    font-family: $fontPrimary;
+  font-family: $fontPrimary;
 }
 
 p {
-    line-height: pxToRem(30);
+  line-height: pxToRem(30);
 }
 
 .page {
-    min-height: calc(100vh - $headerHeight);
-    color: $textPrimaryLightColor;
+  min-height: calc(100vh - $headerHeight);
+  color: $textPrimaryLightColor;
 }

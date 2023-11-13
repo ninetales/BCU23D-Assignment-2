@@ -3,38 +3,38 @@ _mobile-drop-down-menu.scss
 ***********************************************************************/
 
 .mobile-drop-down-menu {
-    display: flex;
-    min-height: 100%;
-    background-color: $secondaryColor;
-    width: 100%;
-    position: fixed;
-    padding-top: $headerHeight;
-    justify-content: center;
-    align-items: center; 
-    z-index: 90;
+  display: flex;
+  min-height: 100%;
+  background-color: $secondaryColor;
+  width: 100%;
+  position: fixed;
+  padding-top: $headerHeight;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
 
-    transform: translateY(-100%);
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
+  transform: translateY(-100%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 
-    &[data-mobile-drop-down-active="true"] {
-        transform: translateY(0);
+  &[data-mobile-drop-down-active="true"] {
+    transform: translateY(0);
+  }
+
+  &__list {
+    display: grid;
+    grid-gap: 40px;
+    text-align: center;
+
+    li {
+      font-size: pxToRem(50);
+      font-family: $fontCreative;
+
+      a {
+        text-decoration: none;
+        color: $primaryColor;
+      }
     }
-
-    &__list {
-        display: grid;
-        grid-gap: 40px;
-        text-align: center;
-
-        li {
-            font-size: pxToRem(50);
-            font-family: $fontCreative;
-
-            a {
-                text-decoration: none;
-                color: $primaryColor;
-            }
-        }
-    }
+  }
 }
