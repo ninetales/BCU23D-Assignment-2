@@ -7,6 +7,16 @@
   <title>DropTrans</title>
   <link rel="stylesheet" href="./css/style.css" type="text/css" />
 
+  <meta name="description"
+    content="Unlock the full potential of Ether Limited, a revolutionary decentralized application (DApp) at the forefront of blockchain innovation.">
+
+  <meta property="og:title" content="Ether limited amazing decentralised application">
+  <meta property="og:description"
+    content="Discover groundbreaking innovation with Ether Limited, a cutting-edge decentralized application (DApp) redefining blockchain technology. Immerse yourself in transparent and secure decentralized solutions, ushering in a new era of possibilities.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://medieinstitutet.github.io/bcu23d-html-css-inl-mningsuppgift-2-ninetales/">
+  <meta property="og:image" content="https://picsum.photos/1200/630">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,16 +32,17 @@
 </head>
 
 <body>
+
   <!-- ========================================= -->
   <!-- Mobile navigation -->
   <!-- ========================================= -->
-  <div class="mobile-drop-down-menu" data-mobile-drop-down-active="false">
+  <div class="mobile-drop-down-menu" data-mobile-drop-down-active="false" aria-label="Mobile Navigation Menu">
     <nav>
       <ul class="mobile-drop-down-menu__list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Invest</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#" aria-label="Navigate to Home">Home</a></li>
+        <li><a href="#" aria-label="Learn About Us">About us</a></li>
+        <li><a href="#" aria-label="Explore Investment Opportunities">Invest</a></li>
+        <li><a href="#" aria-label="Contact Us">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -43,7 +54,7 @@
   <header>
     <div class="container container--no-mobile-padding">
       <nav>
-        <button class="nav__btn prego" data-mobile-nav-btn-active="">
+        <button class="nav__btn" data-mobile-nav-btn-active="" aria-label="Toggle Mobile Navigation">
           <span>
             <span></span>
             <span></span>
@@ -52,17 +63,17 @@
         </button>
 
         <ul class="nav__links nav__links--left">
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html" aria-label="Navigate to Home">Home</a></li>
           <li class="spooky_border"></li>
-          <li><a href="#">About us</a></li>
+          <li><a href="#" aria-label="Learn About Us">About us</a></li>
         </ul>
 
-        <a href="" class="nav__logo">DropTrans</a>
+        <a href="index.html" class="nav__logo" aria-label="Navigate to home">DropTrans</a>
 
         <ul class="nav__links nav__links--right">
-          <li><a href="#">Invest</a></li>
+          <li><a href="#" aria-label="Explore Investment Opportunities">Invest</a></li>
           <li class="spooky_border"></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#" aria-label="Contact Us">Contact</a></li>
         </ul>
       </nav>
     </div><!-- .container -->
@@ -145,11 +156,11 @@
     </div><!-- .cookies__info -->
 
     <div class="cookies__action">
-      <button class="cookies__accept" data-cookie-status-btn="accept">
+      <button class="cookies__accept" data-cookie-status-btn="accept" aria-label="Accept Cookies">
         <span>Accept</span>
       </button>
 
-      <button class="cookies__decline" data-cookie-status-btn="decline">
+      <button class="cookies__decline" data-cookie-status-btn="decline" aria-label="Decline Cookies">
         <span>Decline</span>
       </button>
     </div><!-- .cookies__action -->
