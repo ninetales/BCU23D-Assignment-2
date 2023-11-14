@@ -6,6 +6,7 @@ _page-layout.scss
   display: block;
   background-color: $pageLayoutColor;
   position: relative;
+  min-height: calc(100vh - $headerHeight);
 
   &::before {
     content: "";
@@ -74,7 +75,7 @@ _page-layout.scss
 @media screen and (min-width: $desktopSize) {
   .layout {
     display: grid;
-    grid-template-columns: 40% 1fr;
+    grid-template-columns: 35% 1fr;
 
     &::before {
       content: unset;
