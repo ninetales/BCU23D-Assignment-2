@@ -9,13 +9,13 @@ style.scss
 @import "./abstract/typography.scss";
 @import "./abstract/variables.scss";
 
+@import "./layout/grid.scss";
+@import "./layout/base.scss";
+@import "./layout/hero.scss";
+@import "./layout/page-layout.scss";
+
 @import "./components/_mobile-nav-button.scss";
 @import "./components/cookies.scss";
 
 @import "./sections/header.scss";
 @import "./sections/mobile-drop-down-menu.scss";
-
-@import "./layout/grid.scss";
-@import "./layout/base.scss";
-@import "./layout/hero.scss";
-@import "./layout/page-layout.scss";
