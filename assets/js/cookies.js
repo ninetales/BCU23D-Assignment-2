@@ -2,16 +2,15 @@
 cookies.js
 ***********************************************************************/
 
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function () {
 
-    document.addEventListener('click', function(event){
+    document.addEventListener('click', function (event) {
 
-        if(event.target.hasAttribute('data-cookie-status-btn') || event.target.closest('[data-cookie-status-btn]')){
+        if (event.target.hasAttribute('data-cookie-status-btn') || event.target.closest('[data-cookie-status-btn]')) {
 
             const status = event.target.closest('[data-cookie-status-btn]').getAttribute('data-cookie-status-btn');
-            console.log(status);
 
-            if(status === "accept"){
+            if (status === "accept") {
                 // Do something if accepted
                 temporaryHide();
             } else {
