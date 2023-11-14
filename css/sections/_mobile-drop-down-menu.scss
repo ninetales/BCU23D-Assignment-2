@@ -4,6 +4,7 @@ _mobile-drop-down-menu.scss
 
 .mobile-drop-down-menu {
   display: flex;
+  visibility: hidden;
   min-height: 100%;
   background-color: $secondaryColor;
   width: 100%;
@@ -19,6 +20,7 @@ _mobile-drop-down-menu.scss
   -o-transition: all 0.5s ease;
 
   &[data-mobile-drop-down-active="true"] {
+    visibility: visible;
     transform: translateY(0);
   }
 
